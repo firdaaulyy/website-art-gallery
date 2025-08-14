@@ -158,15 +158,43 @@ section {
 }
 
 /* Hero section ends */
+
+/* Gallery section start */
+
+.gallery h2,
+.comission h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.gallery .heading span,
+.comission .heading span {
+  color: var(--camel);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.gallery p {
+  text-align: center;
+  color: var(--white);
+  max-width: 40rem;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  margin-bottom: 3.5rem;
+  font-weight: 300;
+}
+
 .gallery .box-container {
-  background: var(--camel);
+  background: var(--bistre);
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
 
 .gallery {
-  background-color: var(--camel);
+  background-color: var(--bistre);
 }
 
 .gallery .box-container .box {
@@ -213,6 +241,10 @@ section {
 }
 
 .gallery .box-container .box .image .icons a {
+  color: rgba(0, 0, 0, 0);
+}
+
+.gallery .box-container .box:hover .image .icons a {
   height: 3rem;
   line-height: 3rem;
   font-size: 1.5rem;
@@ -221,7 +253,63 @@ section {
   color: var(--white);
 }
 
-.gallery h2 {
+.gallery .box-container .box .content {
   text-align: center;
-  margin-bottom: 1rem;
+  padding: 1.5rem;
 }
+
+.gallery .box-container .box .content h3 {
+  font-size: 1.5rem;
+}
+.gallery .box-container .box .content .price {
+  font-size: 1.5rem;
+  color: var(--coffee);
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+.gallery .box-container .box .content .price span {
+  font-size: 1rem;
+  color: #999;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+/* Gallery section ended */
+
+/* Comission section start */
+.comission {
+  color: white;
+}
+.orders-form {
+  width: 60vw;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.comission h3 {
+  color: var(--white);
+  font-size: 1.7rem;
+  margin: 3rem 2rem 1rem;
+  font-weight: 500;
+  text-decoration: underline var(--coffee);
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  margin: 10px;
+}
+input,
+textarea {
+  min-height: 2em;
+  background-color: var(--coffee);
+  color: white;
+}
+
+/* Comission section Ended */
